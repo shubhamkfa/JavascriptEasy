@@ -16,14 +16,15 @@ let isLoggedIn = false
 // string => "value "
 // boolean => true/false
 // null => standalone value  (its an object data type  Null means empty temporature aya hi nhi )
-// undefined => 
-// symbol => unique
+// undefined =>  type -> undefined
+// symbol => unique ( type function)
 
 //object 
 
 console.log (typeof "shubham");
 console.log (typeof undefined);
 console.log(typeof null);
+console.log(typeof Symbol);
 
 
 
