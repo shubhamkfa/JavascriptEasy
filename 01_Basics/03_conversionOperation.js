@@ -1,6 +1,6 @@
-//dont rely on numbers check type and do conversion if needed and check typeof
+//6 dont rely on numbers check type and do conversion if needed and check typeof
 
-
+/* //session 6 
 
 let score = "33" //33
 let value1 = "33abc" //NaN ( Not a Number type is Number only)
@@ -51,3 +51,69 @@ console.log(valueInString);
 
 console.log(valueInString +77+ (10+5))
 console.log(valueInBool);
+
+*/ 
+
+
+//*********************** Operations ****************/
+
+/* //negative value
+let value = 3
+let negValue = -value
+console.log (negValue);
+
+
+//operators
+
+console.log( 2 + 2 );
+console.log( 2- 2 );
+console.log(2 * 2);
+console.log(2 ** 3);
+console.log(2 / 3);
+console.log(2 % 3);
+
+
+let str1 = "Hello"
+let str2 = " Shubham"
+let str3 = str1 + str2
+
+console.log(str3);
+
+
+
+console.log( "1" + 2 ); //12
+console.log( 1 + "2" );//12
+console.log( "1"+ 2 + 2 ); //122
+console.log( 1 + 2 + "2" ); //32
+console.log( 3 + 4 * 5 % 3 );//5 dont code this messy code its not a exam its coading 
+
+*/
+
+console.log( + true);// 1
+console.log( true + 2);//incorrect
+console.log(+ "");
+
+let num1,num2,num3
+num1 = num2 = num3 = 2 + 2
+console.log(num1);
+
+//Presidend operator
+let gameCounter = 100
+gameCounter++; // Increment 
+console.log(gameCounter);
+
+//Post Increment //postfix
+let x = 3;
+const y = x++;
+console.log(x); //4
+console.log(y);// 3
+
+//pre increment // prefix
+let a = 3;
+const b = ++a;
+console.log(a);//4
+console.log(b);//4
+
+
+
+
