@@ -84,5 +84,29 @@ const myFunction = function ( ) {
 console.log(typeof myObj);
 
 
-
+//***************************memory****************************
     
+//Stack ( Primitive ) DDD, -> value ka copy milta hai oroginal value change nhi hota 
+//Heap (Non-Primitive) D -> value ka reference milta h oroginal value change hota hai 
+
+
+let myYoutubeName = "pragatizvlog"
+
+let anotherName = myYoutubeName
+anotherName = "shubhamsvlog"
+
+console.log(myYoutubeName);
+console.log(anotherName);
+
+
+
+let userOne ={
+    email:"user@gmail.com",
+    upi: "user@ybl"
+}
+
+let userTwo = userOne
+userTwo.email = "shubham@google.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
