@@ -129,4 +129,22 @@ console.log(str.substr(-8));
 //if the first parameter is negative, the position counts from the end of the string 
 
 
+/* Coneverting to Upper and Lower case
 
+1.A string is converted to upper case with toUpperCase()
+2.a string is converted to lower case with toLowerCase()
+
+
+
+console.log(str.toUpperCase());
+console.log(str.toLowerCase());
+
+*/
+
+//Concat() ->  this method joins two or more strings
+
+let textt1 = "Hello"
+let text1 ="Shubs"
+let textt3 = textt1.concat(" ",text1);
+
+console.log(textt3);
