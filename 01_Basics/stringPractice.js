@@ -100,9 +100,9 @@ console.log(propertyAccess[7]);
 
 
 //1.slice(start,end)
-let extract = "Apple,Banana,Mango"
-let slic = extract.slice(5,15)
-let slic2 = extract.slice(8)
+let str = "Apple,Banana,Mango"
+let slic = str.slice(5,15)
+let slic2 = str.slice(8)
 
 
 console.log(slic);
@@ -110,5 +110,23 @@ console.log(slic2);
 
 
 //2.Substring
+// substring is similar to slice only 
+//the difference is that start and end values less that 0 are treated as 0 in substring ()
+
+console.log(str.substring(6,10));
+
+
+//3.substr() - > method is similar to slice() 
+// the difference is that the second parameter specified the length of extraceted part
+
+
+console.log(str.substr(6,4));
+
+
+//If you omit the second parameter,substr() will slice the rest of the string 
+
+console.log(str.substr(-8));
+//if the first parameter is negative, the position counts from the end of the string 
+
 
 
