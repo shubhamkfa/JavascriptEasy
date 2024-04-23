@@ -148,3 +148,56 @@ let text1 ="Shubs"
 let textt3 = textt1.concat(" ",text1);
 
 console.log(textt3);
+
+
+//Note: All string methoda return a new string.They dont modify the original string.
+//Strings are Immutable: String cannot be changed only replaced.
+
+//Trim()-method removes space from both the side 
+
+let trim1 = "   shubham  shinde  patil   "
+let trim2 = trim1.trim()
+console.log(trim2);
+
+
+//trimStart() -> ECMA script added 2019 
+//the the trimStart () method will work like trim() only but removes whitespace only from a start of the string.
+
+//trimEnd() -> remove whitespace only from the ending 
+
+
+//************Javascript String Padding********************
+
+//padStart() method pads a string from the start. ECMAScript2017
+//It pads a string with another string (Multiple times ) until it reaches  a given length.
+
+
+//Examples
+//Pad a string with "0" until it reaches the length 4:
+let textPad = "a";
+let padded = textPad.padStart(4,"b")
+console.log(padded);
+
+//Note: The padStart() method is a string method 
+//To pad a number, convert the number to string first 
+
+//2. padEnd() me3thoed pads a string from the end.
+//It pads a string with another string until it reaches a given number.
+
+let padText = "4"
+let padEnd1 = padText.padEnd(3,0)
+console.log(padEnd1);
+
+//Note: the padEnd () method is a string method.
+//To pad a number, convert the number to string FileSystemWritableFileStream.apply
+
+
+//*********************Javascript String repeat() */
+
+//1. repeat() method returns  a string with number of copies of a string 
+//repeat methods returns a new string
+//repeat method does not change the original string
+
+
+let rep = "Line break using \\n  \n" // i have used \n for line break 
+console.log(rep.repeat(3));
