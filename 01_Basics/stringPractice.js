@@ -194,10 +194,49 @@ console.log(padEnd1);
 
 //*********************Javascript String repeat() */
 
-//1. repeat() method returns  a string with number of copies of a string 
+//1. string.repeat(count) - a new string containing a copies
+//method returns  a string with number of copies of a string 
 //repeat methods returns a new string
 //repeat method does not change the original string
 
 
+
+
 let rep = "Line break using \\n  \n" // i have used \n for line break 
 console.log(rep.repeat(3));
+
+
+/***************Replacing string content ***********/
+
+//1. replace() - method replaces a specified value with another value in a string
+
+
+let TextRep = "Please Visit Microsoft Microsoft and Microsoft! "
+let textnew = TextRep.replace("Microsoft","Google")
+console.log(textnew);
+
+//Note: replace mthod does ot change the string it is called on.
+//method returns a new string
+//replace() replace a first match only 
+//by default replace method is case sensetive writing MICROST will not work
+//to replace case sensative user /i flag 
+
+
+
+
+//If you want to replace all matches, use a regular expression with the /g flag set. 
+//Regular expression are written without quotes 
+
+//exp-
+let TextRep2 = "Please Visit Microsoft Microsoft and Microsoft! "
+let textnew2 = TextRep2.replace(/MICROSOFT/i,"Google")
+console.log(textnew2);
+
+
+
+//To replace all matches, use a  regular expression with /g flag ( global match):
+
+let textReplaceGlobal = " Shubham please join Google or Microsoft you will get so much hike in Google and i know Google is your Dream company"
+
+let joinCom = textReplaceGlobal.replace(/Google/g , "Microsoft")
+console.log(joinCom);
