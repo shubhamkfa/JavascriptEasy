@@ -241,7 +241,11 @@ let textReplaceGlobal = " Shubham please join Google or Microsoft you will get s
 let joinCom = textReplaceGlobal.replace(/Google/g , "Microsoft")
 console.log(joinCom);
 
-//ReplaceAll() -> 
+//ReplaceAll() -> its an ES2021 feature 
+//ReplaceAll method allow you to specify a regular expression insted of a string to be replace.
+// If the parameter is a regular expression, the global flag (g) must be set , otherwise a TypeError is thrown.
+
+
 
 
 let rest = "I love cats, cats are very lovely, \n Cats are very popular. \n Cats is much funnier than dogs , \n I dont like dogs as i like Cats"
@@ -253,4 +257,27 @@ rest = rest.replaceAll("Cats","Dogs");
 let rest1 = rest
 console.log(rest1);
 
+
+/**************************Converting a String to an Array ********************/
+
+/****  If you want to worrk with a string as an array, you can convert it to an arrays// */
+
+
+/**************Javascript  ********************/
+//split() ->  a string can be converted into array with the split method
+
+let spli = "Hello shubham, how are you doing? I have a better apportinity for! you "
+
+console.log(spli.split(",")); // Split on commas
+console.log(spli.split(" "));// Split on spaces
+console.log(spli.split("|"));//split on pipe
+
+// if the seperator is omitted, the returned array will contain the whole string in index[0].
+// if the seperator is "" . the returned array will be an array of single characters.
+
+
+
+let split1 ="SHubham"
+console.log(split1.split(""));
+console.log(typeof split1);
 
