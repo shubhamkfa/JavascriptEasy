@@ -266,7 +266,7 @@ console.log(rest1);
 /**************Javascript  ********************/
 //split() ->  a string can be converted into array with the split method
 
-let spli = "Hello shubham, how are you doing? I have a better apportinity for! you "
+let spli = "Hello shubham, how are you doing? I have  your a Better apportinity for! you "
 
 console.log(spli.split(",")); // Split on commas
 console.log(spli.split(" "));// Split on spaces
@@ -281,3 +281,4 @@ let split1 ="SHubham"
 console.log(split1.split(""));
 console.log(typeof split1);
 
+console.log(spli.includes('better'));
