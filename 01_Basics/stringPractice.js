@@ -234,9 +234,23 @@ console.log(textnew2);
 
 
 
-//To replace all matches, use a  regular expression with /g flag ( global match):
+//To replace all matches, use a  regular expression with /g flag ( global match): ( we can learn more about regular expression in later )
 
 let textReplaceGlobal = " Shubham please join Google or Microsoft you will get so much hike in Google and i know Google is your Dream company"
 
 let joinCom = textReplaceGlobal.replace(/Google/g , "Microsoft")
 console.log(joinCom);
+
+//ReplaceAll() -> 
+
+
+let rest = "I love cats, cats are very lovely, \n Cats are very popular. \n Cats is much funnier than dogs , \n I dont like dogs as i like Cats"
+
+ rest = rest.replaceAll("cats","dogs");
+
+rest = rest.replaceAll("Cats","Dogs");
+
+let rest1 = rest
+console.log(rest1);
+
+
